@@ -38,6 +38,8 @@ When upgrading, a copy of your `theme.less` gets saved to `theme-backup.less`
     cd ~/Library/Application\ Support/Taskpaper/
     mv theme.less theme-backup.less && cp -p theme-notes-first/theme.less theme.less
 
+To get notified of updates, [subscribe be notified by email](http://pascallaliberte.me/uses-taskpaper/).
+
 ## Collaborating
 
 1. Use a symlink to point to the theme.less inside the theme-notes-first directory

@@ -5,8 +5,11 @@ Taskpaper 3 just came out, and here's a theme for those who:
 * Use *note* items a lot, and tasks (dashed items) just a little
 * Find the handle (the circle next to the lines) handy mostly to collapse indented items
 * Prefer URLs to appear discreetly, but still look clickable
+* Prefer to use the keyboard to cut-paste items to re-order them over using draggable handles to re-order items (on the Mac anyway)
 
 ## Installation
+
+In your terminal:
 
     # Download theme to Application Support directory
     cd ~/Library/Application\ Support/Taskpaper/

@@ -18,11 +18,17 @@ In your terminal:
     # Backup the previous theme.less and copy theme.less from theme-notes-first
     mv theme.less theme-backup.less && cp -p theme-notes-first/theme.less theme.less
 
+You can still make adjustments to the theme, and upgrade it when there are new updates (see [Upgrading](#Upgrading) below).
+
 ## Here's how it looks
 
 ![Preview of a taskpaper with the theme applied](preview.png)
 
 ## Upgrading
+
+Since `theme.less` gets copied from the `theme-notes-first` directory, you can still make your own adjustments.
+
+When upgrading, a copy of your `theme.less` gets saved to `theme-backup.less`
 
     # Download the latest version of the theme
     cd ~/Library/Application\ Support/Taskpaper/theme-notes-first

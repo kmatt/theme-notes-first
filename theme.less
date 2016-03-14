@@ -1,0 +1,104 @@
+// See http://guide.taskpaper.com/creating_themes.html to get started.
+
+// Base text
+@font-family: Source Sans Pro;
+@font-size: $USER_FONT_SIZE;
+@text-color: black;
+@background-color: rgb(247, 247, 247);
+@line-height-multiple: 1.1;
+
+// UI
+@tint-color: rgb(0, 122, 255);
+@interface-color: @tint-color;
+@selection-color: mix(@tint-color, @background-color, 30%); // rgb(148, 192, 255);
+@invisibles-color: mix(@tint-color, @background-color, 70%); // rgb(67, 119, 211);
+
+editor {
+  color: @text-color;
+  font-size: @font-size;
+  font-family: @font-family;
+  background-color: @background-color;
+  line-height-multiple: @line-height-multiple;
+
+  item-indent: 20px;
+  caret-width: 2px;
+  caret-color: @tint-color;
+  handle-color: mix(#333, @background-color, 15%); //@tint-color;
+  drop-indicator-color: @tint-color;
+  invisibles-color: @invisibles-color;
+  selection-background-color: @selection-color;
+  guide-line-color: rgba(255,255,255,0); //mix(@tint-color, @background-color, 15%);
+  message-color: mix(@text-color, @background-color, 50%);
+}
+
+item {
+  handle-color: mix(#333, @background-color, 10%); //@tint-color;
+}
+
+item[leaf] {
+  handle-color: @background-color;
+}
+
+item[empty] {
+  handle-color: @background-color;
+}
+
+item[collapsed] {
+  handle-color: #000;
+}
+
+item[data-type="note"] {
+  font-style: normal;
+  color: #999;
+}
+
+item[data-type="task"] {
+  font-style: normal;
+}
+
+item[data-type="project"] {
+  font-weight: bold;
+}
+
+item[data-done] {
+  > run[display] {
+    color: mix(@text-color, @background-color, 15%);
+    text-strikethrough: NSUnderlineStyleSingle;
+    text-strikethrough-color: mix(@text-color, @background-color, 15%); //@text-color;
+  }
+  > run[tag] {
+    color: mix(@text-color, @background-color, 15%);
+  }
+}
+
+run[link] {
+  cursor: pointer;
+  color: #999;
+  text-decoration: underline;
+  text-underline-color: mix(#999, @background-color, 30%);
+}
+
+run[link^="button"] {
+  color: @text-color;
+  text-expansion: 1;
+  text-decoration: none;
+}
+
+run[link^="filter"] {
+  color: @text-color;
+}
+
+run[tag] {
+  font-size: @font-size;
+  font-style: normal;
+  font-weight: normal;
+  color: mix(@text-color, @background-color, 50%);
+}
+
+item[data-today] {
+  color: orange;
+}
+
+run[tag=data-today] {
+  color: green;
+}

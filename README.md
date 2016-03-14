@@ -1,6 +1,6 @@
 # A theme for Taskpaper for those who use notes more than tasks
 
-Taskpaper 3 just came out, and here's a theme for those who:
+Taskpaper 3 is about to come out, and here's a theme for those who:
 
 * Use *note* items a lot, and tasks (dashed items) just a little
 * Find the handle (the circle next to the lines) handy mostly to collapse indented items

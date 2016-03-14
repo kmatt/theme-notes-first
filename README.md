@@ -7,6 +7,10 @@
 * Prefer URLs to appear discreetly, but still look clickable
 * Prefer to use the keyboard to cut-paste items to re-order them over using draggable handles to re-order items (on the Mac anyway)
 
+## Here's how it looks
+
+![Preview of a taskpaper with the theme applied](preview.png)
+
 ## Installation
 
 In your terminal:
@@ -20,9 +24,7 @@ In your terminal:
 
 You can still make adjustments to the theme, and upgrade it when there are new updates (see [Upgrading](#Upgrading) below).
 
-## Here's how it looks
-
-![Preview of a taskpaper with the theme applied](preview.png)
+To get notified of updates, or to get notified when I publish on how I use Taskpaper, [subscribe be notified by email](http://pascallaliberte.me/uses-taskpaper/).
 
 ## Upgrading
 
@@ -37,8 +39,6 @@ When upgrading, a copy of your `theme.less` gets saved to `theme-backup.less`
     # Backup the previous theme.less and copy theme.less from theme-notes-first
     cd ~/Library/Application\ Support/Taskpaper/
     mv theme.less theme-backup.less && cp -p theme-notes-first/theme.less theme.less
-
-To get notified of updates, [subscribe be notified by email](http://pascallaliberte.me/uses-taskpaper/).
 
 ## Collaborating
 
@@ -56,4 +56,4 @@ To get notified of updates, [subscribe be notified by email](http://pascallalibe
 
 ## Thanks
 
-Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for working on version 3. I'm so glad Taskpaper exists!
+Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for working on Taskpaper 3.

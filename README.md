@@ -60,4 +60,4 @@ When upgrading, a copy of your `theme.less` gets saved to `theme-backup.less`.
 
 ## Thanks
 
-Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for working on Taskpaper 3.
+Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for Taskpaper 3.

@@ -1,13 +1,11 @@
-# A theme for Taskpaper for those who use notes more than tasks
+# A theme for Taskpaper 3 for those who use notes more than tasks
 
-[Taskpaper 3](http://www.taskpaper.com) is about to come out, and here's a theme for those who:
+This theme for [Taskpaper 3](http://www.taskpaper.com) is great if you:
 
 * Use *notes* items a lot, and tasks (dashed items) just a little
 * Find the handle (the circle next to the lines) handy mostly to collapse indented items
 * Prefer URLs to appear discreetly, but still look clickable
 * Prefer to use the keyboard to cut-paste items to re-order them over using draggable handles to re-order items (on the Mac anyway)
-
-## Here's how it looks
 
 ![Preview of a taskpaper with the theme applied](preview.png)
 

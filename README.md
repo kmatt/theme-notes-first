@@ -1,4 +1,4 @@
-# A theme for Taskpaper 3 for those who use notes more than tasks
+# Notes-First theme for Taskpaper 3
 
 This theme for [Taskpaper 3](http://www.taskpaper.com) is great if you:
 

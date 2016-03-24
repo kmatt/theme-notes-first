@@ -5,7 +5,7 @@
 @font-size: $USER_FONT_SIZE;
 @text-color: black;
 @background-color: rgb(247, 247, 247);
-@line-height-multiple: 1.1;
+@line-height-multiple: 1;
 
 // UI
 @tint-color: rgb(0, 122, 255);
@@ -33,6 +33,7 @@ editor {
 
 item {
   handle-color: mix(#333, @background-color, 10%); //@tint-color;
+  paragraph-spacing-before: $USER_FONT_SIZE * 0.2;
 }
 
 item[leaf] {
@@ -60,6 +61,10 @@ item[data-type="project"] {
   font-weight: bold;
   line-height-multiple: 1;
   font-size: @user-font-size;
+}
+
+item[depth=1].item[data-type=project] {
+  paragraph-spacing-before: $USER_FONT_SIZE * 0.5;
 }
 
 item[data-done] {

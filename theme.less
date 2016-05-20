@@ -24,6 +24,7 @@ editor {
   caret-width: 2px;
   caret-color: @tint-color;
   handle-color: mix(#333, @background-color, 15%); //@tint-color;
+  item-handle-size: floor(7 * @ui-scale);
   drop-indicator-color: @tint-color;
   invisibles-color: @invisibles-color;
   selection-background-color: @selection-color;
@@ -34,10 +35,13 @@ editor {
 item {
   handle-color: mix(#333, @background-color, 10%); //@tint-color;
   paragraph-spacing-before: $USER_FONT_SIZE * 0.3;
+  handle-border-color: clear;
+  handle-border-width: 1;
 }
 
 item[leaf] {
   handle-color: clear;
+  handle-border-color: clear;
 }
 
 item[empty] {
@@ -45,7 +49,8 @@ item[empty] {
 }
 
 item[collapsed] {
-  handle-color: #000;
+  handle-color: mix(#333, @background-color, 85%); //@tint-color;
+  handle-size: floor(8 * @ui-scale);
 }
 
 item[data-type="note"] {

@@ -11,12 +11,10 @@ This theme for [TaskPaper 3](http://www.taskpaper.com) is great if you:
 
 ## Here's how to install the theme (all new instructions for v3.5 and up)
 
-1. [Download the zip][download] and open the zip folder
+1. Download the zip and open the zip folder
 2. `Window` menu > `StyleSheet` > `Open StyleSheet Folder` *<-- from within TaskPaper*
-3. Drag `Notes First.less` from the zip folder to the `StyleSheet` Folder
+3. Copy `Notes First.less` from the zip folder to the `StyleSheet` Folder
 4. `Window` menu > `StyleSheet` > `Notes First.less` *<-- also from within TaskPaper*
-
-[download]: /archive/master.zip
 
 ## Get notified of updates
 

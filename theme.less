@@ -2,7 +2,7 @@
 
 // Base text
 @font-family: Source Sans Pro;
-@font-size: $USER_FONT_SIZE;
+@font-size: $USER_FONT_SIZE * 1.1;
 @text-color: black;
 @background-color: rgb(247, 247, 247);
 @line-height-multiple: 0.9;
@@ -65,7 +65,7 @@ item[data-type="task"] {
 item[data-type="project"] {
   font-weight: bold;
   line-height-multiple: @line-height-multiple;
-  font-size: @user-font-size;
+  font-size: @font-size;
 }
 
 item[depth=1].item[data-type=project] {

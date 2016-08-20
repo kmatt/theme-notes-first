@@ -16,7 +16,7 @@ This theme for [TaskPaper 3](http://www.taskpaper.com) is great if you:
 3. Drag `Notes First.less` from the zip folder to the `StyleSheet` Folder
 4. `Window` menu > `StyleSheet` > `Notes First.less` *<-- also from within TaskPaper*
 
-[download]: /pascallaliberte/theme-notes-first/archive/3.5.zip
+[download]: /archive/master.zip
 
 ## Get notified of updates
 

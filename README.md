@@ -1,4 +1,4 @@
-# Notes-First theme for Taskpaper 3
+# A Notes First theme for Taskpaper 3
 
 This theme for [Taskpaper 3](http://www.taskpaper.com) is great if you:
 
@@ -9,53 +9,17 @@ This theme for [Taskpaper 3](http://www.taskpaper.com) is great if you:
 
 ![Preview of a taskpaper with the theme applied](preview.png)
 
-## Installation
+## Here's how to install the theme (all new instructions for v3.5 and up)
 
-Until Taskpaper 3 has a native way to install themes, here's a way to install this theme via a few terminal commands. You'll be able to upgrade it later and tweak it too.
+1. Download the zip and open the zip folder
+2. `Window` menu > `StyleSheet` > `Open StyleSheet Folder` *<-- from within Taskpaper*
+3. Drag `Notes First.less` from the zip folder to the `StyleSheet` Folder
+4. `Window` menu > `StyleSheet` > `Notes First.less` *<-- also from within Taskpaper*
 
-In your terminal:
+## Get notified of updates
 
-    # Download theme to Application Support directory
-    cd ~/Library/Application\ Support/Taskpaper/
-    git clone https://github.com/pascallaliberte/theme-notes-first.git
+Updates don't come up very often, but to be sure you're ready when new versions of Taskpaper are announced, [subscribe to be notified by email](http://pascallaliberte.me/uses-taskpaper/). I'll also share on how I use Taskpaper (centered on objectives).
 
-    # Backup the previous theme.less and copy theme.less from theme-notes-first
-    mv theme.less theme-backup.less && cp -p theme-notes-first/theme.less theme.less
-
-You can still make adjustments to the theme, and upgrade it when there are new updates (see [Upgrading](#Upgrading) below).
-
-## Get notified
-
-To get notified of updates, or to get notified when I publish on how I use Taskpaper (centered on objectives), [subscribe to be notified by email](http://pascallaliberte.me/uses-taskpaper/).
-
-## Upgrading
-
-Since `theme.less` gets copied from the `theme-notes-first` directory, you can still make your own adjustments.
-
-When upgrading, a copy of your `theme.less` gets saved to `theme-backup.less`.
-
-    # Download the latest version of the theme
-    cd ~/Library/Application\ Support/Taskpaper/theme-notes-first
-    git pull origin master
-
-    # Backup the previous theme.less and copy theme.less from theme-notes-first
-    cd ~/Library/Application\ Support/Taskpaper/
-    mv theme.less theme-backup.less && cp -p theme-notes-first/theme.less theme.less
-
-## Collaborating
-
-1. Use a symlink to point to the theme.less inside the theme-notes-first directory
-
-  ```
-  cd ~/Library/Application\ Support/Taskpaper/
-  mv theme.less theme-backup.less && ln -s theme-notes-first/theme.less
-  ```
-
-2. Fork this project
-3. Create a branch with the name of your new change, like *use-variables-everywhere*
-4. Push your branch
-5. Submit a pull request for your new branch
-
-## Thanks
+## 💙 Taskpaper
 
 Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for Taskpaper 3.

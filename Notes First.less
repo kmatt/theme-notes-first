@@ -33,19 +33,19 @@ editor {
 }
 
 item {
-  handle-color: mix(#333, @background-color, 10%); //@tint-color;
+  handle-color: mix(#333, @background-color, 10%);
   paragraph-spacing-before: $USER_FONT_SIZE * 0.3;
-  handle-border-color: clear;
+  handle-border-color: mix(#333, @background-color, 10%);
   handle-border-width: 1;
 }
 
 item[leaf] {
-  handle-color: clear;
-  handle-border-color: clear;
+  handle-color: none;
+  handle-border-color: none;
 }
 
 item[empty] {
-  handle-color: clear;
+  handle-color: none;
 }
 
 item[collapsed] {

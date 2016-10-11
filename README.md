@@ -1,4 +1,4 @@
-# A Notes First StyleSheet for TaskPaper 3
+# A Notes First StyleSheet for TaskPaper 3.5
 
 ![Preview of a taskpaper with the StyleSheet applied](preview.png)
 

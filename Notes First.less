@@ -2,7 +2,7 @@
 
 // Base text
 @font-family: Source Sans Pro;
-@font-size: $USER_FONT_SIZE;
+@font-size: $USER_FONT_SIZE * 1.1;
 @text-color: black;
 @background-color: rgb(247, 247, 247);
 @line-height-multiple: 0.9;
@@ -33,24 +33,28 @@ editor {
 }
 
 item {
-  handle-color: mix(#333, @background-color, 10%); //@tint-color;
+  handle-color: mix(#333, @background-color, 10%);
   paragraph-spacing-before: $USER_FONT_SIZE * 0.3;
-  handle-border-color: clear;
+  handle-border-color: mix(#333, @background-color, 10%);
   handle-border-width: 1;
 }
 
 item[leaf] {
-  handle-color: clear;
-  handle-border-color: clear;
+  handle-color: none;
+  handle-border-color: none;
 }
 
 item[empty] {
-  handle-color: clear;
+  handle-color: none;
 }
 
 item[collapsed] {
   handle-color: mix(#333, @background-color, 85%); //@tint-color;
   handle-size: floor(8 * @ui-scale);
+}
+
+item[expanded] {
+  handle-border-color: none;
 }
 
 item[data-type="note"] {
@@ -65,7 +69,7 @@ item[data-type="task"] {
 item[data-type="project"] {
   font-weight: bold;
   line-height-multiple: @line-height-multiple;
-  font-size: @user-font-size;
+  font-size: @font-size;
 }
 
 item[depth=1].item[data-type=project] {

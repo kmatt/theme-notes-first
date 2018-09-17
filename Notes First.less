@@ -4,7 +4,6 @@
 // Appearance
 @appearance: $APPEARANCE;
 
-// @tint-color: $CONTROL_ACCENT_COLOR;
 @tint-color: rgb(0, 122, 255);
 
 // Light Appearance Colors
@@ -43,7 +42,7 @@
 @background-color: @@current-appearance-background-color;
 @interface-color: @tint-color;
 @selection-color: mix(@tint-color, @background-color, @@current-selection-color-percent);
-@invisibles-color: mix(@tint-color, @background-color, 70%); // rgb(67, 119, 211);
+@invisibles-color: mix(@tint-color, @background-color, 70%);
 
 // Base text
 @font-family: Source Sans Pro;
@@ -116,7 +115,7 @@ item[data-done] {
   > run[content] {
     color: mix(@text-color, @background-color, @@current-done-color-percent);
     text-strikethrough: NSUnderlineStyleSingle;
-    text-strikethrough-color: mix(@text-color, @background-color, @@current-done-color-percent); //@text-color;
+    text-strikethrough-color: mix(@text-color, @background-color, @@current-done-color-percent);
   }
   > run[tag] {
     color: mix(@text-color, @background-color, @@current-done-color-percent);

@@ -4,10 +4,11 @@
 // Appearance
 @appearance: $APPEARANCE;
 
-@tint-color: $CONTROL_ACCENT_COLOR;
+// @tint-color: $CONTROL_ACCENT_COLOR;
+@tint-color: rgb(0, 122, 255);
 
 // Light Appearance Colors
-@light-text-color: rgb(20%, 20%, 20%);
+@light-text-color: black;
 @light-background-color: rgb(247, 247, 247);
 @light-done-color-percent: 15%;
 @light-guide-line-color-percent: 0%;
@@ -42,7 +43,6 @@
 @background-color: @@current-appearance-background-color;
 @interface-color: @tint-color;
 @selection-color: mix(@tint-color, @background-color, @@current-selection-color-percent);
-// @selection-color: mix($SELECTED_CONTENT_BACKGROUND_COLOR, @background-color, @@current-selection-color-percent);
 @invisibles-color: mix(@tint-color, @background-color, 70%); // rgb(67, 119, 211);
 
 // Base text
@@ -85,7 +85,7 @@ item[empty] {
 }
 
 item[collapsed] {
-  handle-color: mix(@text-color, @background-color, @@current-handle-collapsed-color-percent); //@tint-color;
+  handle-color: mix(@text-color, @background-color, @@current-handle-collapsed-color-percent);
   handle-size: floor(8 * @ui-scale);
 }
 
@@ -95,7 +95,7 @@ item[expanded] {
 
 item[data-type="note"] {
   font-style: normal;
-  color: #999;
+  color: mix(@text-color, @background-color, 40%);
 }
 
 item[data-type="task"] {
@@ -125,9 +125,9 @@ item[data-done] {
 
 run[link] {
   cursor: pointer;
-  color: #999;
+  color: mix(@text-color, @background-color, 40%);
   text-decoration: underline;
-  text-underline-color: mix(#999, @background-color, 30%);
+  text-underline-color: mix(@text-color, @background-color, 15%);
 }
 
 run[link^="button"] {

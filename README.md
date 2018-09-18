@@ -1,6 +1,6 @@
 # A Notes-First StyleSheet for TaskPaper 3.8 and up
 
-![Preview of a TaskPaper with the StyleSheet applied](preview.png)
+![Preview of a TaskPaper with the Light StyleSheet applied](preview.png)
 
 This StyleSheet for [TaskPaper 3.8 and up](http://www.taskpaper.com) is great if you:
 
@@ -8,7 +8,13 @@ This StyleSheet for [TaskPaper 3.8 and up](http://www.taskpaper.com) is great if
 * Find the handle (the circle next to the lines) handy mostly to collapse indented items
 * Prefer URLs to appear discreetly, but still look clickable
 * Prefer to use the keyboard to cut-paste items to re-order them over using draggable handles to re-order items (on the Mac anyway)
-* Want a Style Sheet that's compatible with macOS dark mode
+* Want a Style Sheet that's compatible with macOS Dark Mode
+
+## Dark Mode!
+
+![Preview of a TaskPaper with the Dark StyleSheet applied](preview-dark.png)
+
+Dark Mode Requires macOS 10.14 Mojave or later and TaskPaper 3.8 or later
 
 ## Here's how to install the StyleSheet
 
@@ -25,4 +31,4 @@ Updates don't come up very often, but to be sure you're using the right StyleShe
 
 ## 💙 TaskPaper
 
-Thanks [Jesse Grosjean](http://www.hogbaysoftware.com/about) for TaskPaper.
+Thank you [Jesse Grosjean](http://www.hogbaysoftware.com/about) for TaskPaper.

@@ -9,6 +9,7 @@
 // Light Appearance Colors
 @light-text-color: black;
 @light-background-color: rgb(247, 247, 247);
+@light-note-text-color-percent: 40%;
 @light-done-color-percent: 15%;
 @light-guide-line-color-percent: 0%;
 @light-handle-expanded-color-percent: 15%;
@@ -19,6 +20,7 @@
 // Dark Appearance Colors
 @dark-text-color: #ffffff;
 @dark-background-color: #1E2022;
+@dark-note-text-color-percent: 60%;
 @dark-done-color-percent: 30%;
 @dark-guide-line-color-percent: 0%;
 @dark-handle-expanded-color-percent: 10%;
@@ -29,6 +31,7 @@
 // Current Appearance Colors
 @current-appearance-text-color: "@{appearance}-text-color";
 @current-appearance-background-color: "@{appearance}-background-color";
+@current-note-text-color-percent: "@{appearance}-note-text-color-percent";
 @current-done-color-percent: "@{appearance}-done-color-percent";
 @current-guide-line-color-percent: "@{appearance}-guide-line-color-percent";
 @current-handle-color-percent: "@{appearance}-handle-color-percent";
@@ -94,7 +97,7 @@ item[expanded] {
 
 item[data-type="note"] {
   font-style: normal;
-  color: mix(@text-color, @background-color, 40%);
+  color: mix(@text-color, @background-color, @@current-note-text-color-percent);
 }
 
 item[data-type="task"] {

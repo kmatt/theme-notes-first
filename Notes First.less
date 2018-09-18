@@ -1,41 +1,76 @@
-// See http://guide.taskpaper.com/creating_themes.html to get started.
+// // See http://guide.taskpaper.com/creating_themes.html to get started.
+// 
+
+// Appearance
+@appearance: $APPEARANCE;
+
+@tint-color: rgb(0, 122, 255);
+
+// Light Appearance Colors
+@light-text-color: black;
+@light-background-color: rgb(247, 247, 247);
+@light-done-color-percent: 15%;
+@light-guide-line-color-percent: 0%;
+@light-handle-expanded-color-percent: 15%;
+@light-handle-collapsed-color-percent: 80%;
+@light-selection-color-percent: 30%;
+@light-searchbar-background-color: rgb(20%, 20%, 20%);
+
+// Dark Appearance Colors
+@dark-text-color: #ffffff;
+@dark-background-color: #1E2022;
+@dark-done-color-percent: 30%;
+@dark-guide-line-color-percent: 0%;
+@dark-handle-expanded-color-percent: 10%;
+@dark-handle-collapsed-color-percent: 80%;
+@dark-selection-color-percent: 30%;
+@dark-searchbar-background-color: #2D2F35;
+
+// Current Appearance Colors
+@current-appearance-text-color: "@{appearance}-text-color";
+@current-appearance-background-color: "@{appearance}-background-color";
+@current-done-color-percent: "@{appearance}-done-color-percent";
+@current-guide-line-color-percent: "@{appearance}-guide-line-color-percent";
+@current-handle-color-percent: "@{appearance}-handle-color-percent";
+@current-handle-expanded-color-percent: "@{appearance}-handle-expanded-color-percent";
+@current-handle-collapsed-color-percent: "@{appearance}-handle-collapsed-color-percent";
+@current-selection-color-percent: "@{appearance}-selection-color-percent";
+@current-searchbar-background-color: "@{appearance}-searchbar-background-color";
+
+// UI
+@text-color: @@current-appearance-text-color;
+@background-color: @@current-appearance-background-color;
+@interface-color: @tint-color;
+@selection-color: mix(@tint-color, @background-color, @@current-selection-color-percent);
+@invisibles-color: mix(@tint-color, @background-color, 70%);
 
 // Base text
 @font-family: Source Sans Pro;
 @font-size: $USER_FONT_SIZE * 1.1;
-@text-color: black;
-@background-color: rgb(247, 247, 247);
 @line-height-multiple: 0.9;
-
-// UI
-@tint-color: rgb(0, 122, 255);
-@interface-color: @tint-color;
-@selection-color: mix(@tint-color, @background-color, 30%); // rgb(148, 192, 255);
-@invisibles-color: mix(@tint-color, @background-color, 70%); // rgb(67, 119, 211);
 
 editor {
   color: @text-color;
+  background-color: @background-color;
   font-size: @font-size;
   font-family: @font-family;
-  background-color: @background-color;
   line-height-multiple: @line-height-multiple;
 
   item-indent: 20px;
   caret-width: 2px;
   caret-color: @tint-color;
-  handle-color: mix(#333, @background-color, 15%); //@tint-color;
   item-handle-size: floor(7 * @ui-scale);
   drop-indicator-color: @tint-color;
   invisibles-color: @invisibles-color;
   selection-background-color: @selection-color;
-  guide-line-color: rgba(255,255,255,0); //mix(@tint-color, @background-color, 15%);
+  guide-line-color: rgba(255,255,255,0);
   message-color: mix(@text-color, @background-color, 50%);
 }
 
 item {
-  handle-color: mix(#333, @background-color, 10%);
+  handle-color: mix(@text-color, @background-color, @@current-handle-expanded-color-percent);
   paragraph-spacing-before: $USER_FONT_SIZE * 0.3;
-  handle-border-color: mix(#333, @background-color, 10%);
+  handle-border-color: mix(@text-color, @background-color, @@current-handle-expanded-color-percent);
   handle-border-width: 1;
 }
 
@@ -49,7 +84,7 @@ item[empty] {
 }
 
 item[collapsed] {
-  handle-color: mix(#333, @background-color, 85%); //@tint-color;
+  handle-color: mix(@text-color, @background-color, @@current-handle-collapsed-color-percent);
   handle-size: floor(8 * @ui-scale);
 }
 
@@ -59,7 +94,7 @@ item[expanded] {
 
 item[data-type="note"] {
   font-style: normal;
-  color: #999;
+  color: mix(@text-color, @background-color, 40%);
 }
 
 item[data-type="task"] {
@@ -78,20 +113,20 @@ item[depth=1].item[data-type=project] {
 
 item[data-done] {
   > run[content] {
-    color: mix(@text-color, @background-color, 15%);
+    color: mix(@text-color, @background-color, @@current-done-color-percent);
     text-strikethrough: NSUnderlineStyleSingle;
-    text-strikethrough-color: mix(@text-color, @background-color, 15%); //@text-color;
+    text-strikethrough-color: mix(@text-color, @background-color, @@current-done-color-percent);
   }
   > run[tag] {
-    color: mix(@text-color, @background-color, 15%);
+    color: mix(@text-color, @background-color, @@current-done-color-percent);
   }
 }
 
 run[link] {
   cursor: pointer;
-  color: #999;
+  color: mix(@text-color, @background-color, 40%);
   text-decoration: underline;
-  text-underline-color: mix(#999, @background-color, 30%);
+  text-underline-color: mix(@text-color, @background-color, 15%);
 }
 
 run[link^="button"] {

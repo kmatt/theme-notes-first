@@ -22,7 +22,7 @@ This StyleSheet for [TaskPaper 3.8 and up](http://www.taskpaper.com) is great if
 
 ## Get notified of updates
 
-Updates don't come up very often, but to be sure you're using the right StyleSheet for new versions of TaskPaper, [subscribe to be notified by email](http://pascallaliberte.me/uses-taskpaper/). I'll also share on how I use TaskPaper (centered on objectives).
+Updates don't come up very often, but to be sure you're using the right StyleSheet for new versions of TaskPaper, [subscribe to be notified by email from the original author](http://pascallaliberte.me/uses-taskpaper/). I'll also share on how I use TaskPaper (centered on objectives).
 
 ## 💙 TaskPaper
 
